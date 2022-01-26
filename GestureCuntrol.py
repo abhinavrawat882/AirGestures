@@ -14,7 +14,7 @@ mpDraw = mp.solutions.drawing_utils
 ret,frame=vs.read()
 cTime = 0
 pTime = 0
-h,w=968,1560
+h,w=1168,1760
 rn=1
 while(True):
     ret,frame=vs.read()
@@ -39,7 +39,7 @@ while(True):
             #thumb
             cxt=a[4][1].x*w
             cyt=a[4][1].y*h
-            print("1     ",((cxt-x)**2+(cyt-y)**2)**0.5 )
+            #print("1     ",((cxt-x)**2+(cyt-y)**2)**0.5 )
             if ((cxt-x)**2+(cyt-y)**2)**0.5 <=45 :
                 mouse.click('left')
             cx1=a[12][1].x*w
